@@ -1,16 +1,78 @@
-# React + Vite
+# Granny Store – Modern E-Commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive, and modern e-commerce web application built with **React**, **Redux Toolkit**, and **React Router**.
 
-Currently, two official plugins are available:
+This project showcases a full shopping flow — from browsing products and viewing details to adding/removing items from the cart and checking out.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home Page:** Hero section, featured products, and store overview.  
+- **Products Page:** Fetches products dynamically from an API.  
+- **Product Overview:** Displays detailed product information and allows adding/removing from the cart.  
+- **Cart Page:** Real-time cart updates, quantity control, and total price calculation.  
+- **State Management:** Implemented using **Redux Toolkit** for clean and efficient state handling.  
+- **Contact Page:** Includes a working contact form and store location map.  
+- **Routing:** Built with **React Router v6** for smooth navigation.  
+- **UI Design:** Minimal, modern, and mobile-friendly using **Bootstrap 5** and custom CSS.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Category | Technologies Used |
+|-----------|------------------|
+| **Frontend** | React 18, Redux Toolkit, React Router DOM |
+| **UI / Styling** | Bootstrap 5, Custom CSS |
+| **API** | Fake Store API *(or any custom REST API)* |
+| **Build Tool** | Vite |
+
+---
+
+## Project Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Footer.jsx
+│ └── ProductCard.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── ProductsList.jsx
+│ ├── Overview.jsx
+│ ├── Cart.jsx
+│ ├── About.jsx
+│ └── Contact.jsx
+├── slices/
+│ └── cartSlice.js
+├── store.js
+└── main.jsx
+
+## Installation & Setup
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/yourusername/granny-store.git
+cd granny-store
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Start the development server
+npm run dev
+---
+Future Improvements
+
+Add authentication & user accounts
+
+Integrate payment gateway
+
+Add product search & filtering
+
+Use a real backend (Node.js / Django / Laravel)
+
+Author
+
+Kareem Kamel
+Software Engineer | Full-stack Web Developer
